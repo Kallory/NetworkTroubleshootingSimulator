@@ -35,28 +35,35 @@ def main():
             print("\nNetwork Technician Mode active")
             print("Type /help for help or /help <tool name> for help about a particular tool.")
             
-            tool_choice = input("")
-            print("command was: " + tool_choice) 
+            commandInput = input("")
+            commandParts = commandInput.split(' ', 1)
+            command = commandParts[0]
 
-            if tool_choice == "/ping"
-                
+            if command == "/help"
+                # display help file
+            elif command == "/ping"
+                # ping command, check for args and process with network_technician.ping(args)
+               
+          #  print("command was: " + commandParts[0]) 
+          #  print("first argument was: " + commandParts[1])    
+          
           #  print("\nSelect tool:")
           #  print("1. Ping")
           #  print("2. Tracert")
           #  print("3. NSLookup")
           #  print("4. Check Service")
-          #  tool_choice = input("Enter choice: ")
+          #  command = input("Enter choice: ")
           #  
-          #  if tool_choice == "1":
+          #  if command == "1":
           #      ip = input("Enter IP address to ping: ")
           #      network_technician.ping(ip)
-          #  elif tool_choice == "2":
+          #  elif command == "2":
           #      ip = input("Enter IP address to tracert: ")
           #      network_technician.tracert(ip)
-          #  elif tool_choice == "3":
+          #  elif command == "3":
           #      domain = input("Enter domain name for NSLookup: ")
           #      network_technician.nslookup(domain)
-          #  elif tool_choice == "4":
+          #  elif command == "4":
           #      ip = input("Enter IP address to check service: ")
           #      service = input("Enter service name: ")
           #      network_technician.check_service(ip, service)
