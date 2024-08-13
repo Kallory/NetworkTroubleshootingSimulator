@@ -36,7 +36,10 @@ def main():
             print("Type /help for help or /help <tool name> for help about a particular tool.")
             
             tool_choice = input("")
-            print(tool_choice) 
+            print("command was: " + tool_choice) 
+
+            if tool_choice == "/ping"
+                
           #  print("\nSelect tool:")
           #  print("1. Ping")
           #  print("2. Tracert")
